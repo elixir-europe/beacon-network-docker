@@ -1,0 +1,44 @@
+version: '3.9'
+
+networks:
+  beacon-net1:
+
+services:
+  postgres:
+    image: postgres:16.0-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes: 
+      - ./postgresql/data:/var/lib/postgresql/data
+      - ./postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - beacon-net1
+  wildfly:
+    build: ./wildfly
+    image: "wildfly/preview-28.0.1.final"
+    container_name: "wildfly-bn"
+    depends_on:
+      - postgres
+    restart: always
+    volumes:
+      - ./wildfly:/wildfly
+      - ./wildfly/lib/yasson-3.0.4-SNAPSHOT.jar:/opt/jboss/wildfly/modules/system/layers/base/org/eclipse/yasson/main/yasson-3.0.4-SNAPSHOT.jar:ro
+      - ./wildfly/lib/module.xml:/opt/jboss/wildfly/modules/system/layers/base/org/eclipse/yasson/main/module.xml:ro
+      - ./wildfly/postgresql/postgresql-42.6.0.jar:/opt/jboss/wildfly/modules/system/layers/base/org/postgresql/main/postgresql-42.6.0.jar:ro
+      - ./wildfly/postgresql/module.xml:/opt/jboss/wildfly/modules/system/layers/base/org/postgresql/main/module.xml:ro
+    hostname: wildfly
+    networks:
+      - beacon-net1
+    ports:
+      - '8080:8080'
+      - '8009:8009'
+      - '8443:8443'
+    environment:
+      - BEACON_NETWORK_CONFIG_DIR=/wildfly/BEACON-INF
+
+    command:
+      /wildfly/deploy.sh
