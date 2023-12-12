@@ -1,44 +1,56 @@
 version: '3'
 
 networks:
-  beacon-net1:
+  beacon-network:
+
+x-environment: &postgres
+  - POSTGRES_USER=postgres
+  - POSTGRES_PASSWORD=postgres
+  - POSTGRES_BN_DATABASE=beacon-network
+  - BEACON_NETWORK_CONFIG_DIR=/wildfly/BEACON-INF
+  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgres:5432/beacon-network
+  - BEACON_NETWORK_DB_USERNAME=beacon
+  - BEACON_NETWORK_DB_PASSWORD=beacon
 
 services:
   postgres:
     image: postgres:16.0-alpine
+    container_name: "postgres-beacon-network-2"
     restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - '5432:5432'
-    volumes: 
+    environment: *postgres
+    volumes:.
       - ./postgresql/data:/var/lib/postgresql/data
-      - ./postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ./postgresql/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
     networks:
-      - beacon-net1
+      - beacon-network
+
   wildfly:
-    build: ./wildfly
-    image: "wildfly/preview-28.0.1.final"
-    container_name: "wildfly-bn"
+    image: ghcr.io/elixir-europe/beacon-network-backend:latest
+    container_name: "wildfly-beacon-network-2"
     depends_on:
       - postgres
     restart: always
     volumes:
-      - ./wildfly:/wildfly
-      - ./wildfly/lib/yasson-3.0.4-SNAPSHOT.jar:/opt/jboss/wildfly/modules/system/layers/base/org/eclipse/yasson/main/yasson-3.0.4-SNAPSHOT.jar:ro
-      - ./wildfly/lib/module.xml:/opt/jboss/wildfly/modules/system/layers/base/org/eclipse/yasson/main/module.xml:ro
-      - ./wildfly/postgresql/postgresql-42.6.0.jar:/opt/jboss/wildfly/modules/system/layers/base/org/postgresql/main/postgresql-42.6.0.jar:ro
-      - ./wildfly/postgresql/module.xml:/opt/jboss/wildfly/modules/system/layers/base/org/postgresql/main/module.xml:ro
+      - ./wildfly/BEACON-INF:/wildfly/BEACON-INF
     hostname: wildfly
     networks:
-      - beacon-net1
+      - beacon-network
     ports:
-      - '8080:8080'
-      - '8009:8009'
-      - '8443:8443'
-    environment:
-      - BEACON_NETWORK_CONFIG_DIR=/wildfly/BEACON-INF
+      - '9080:8080'
+      - '9009:8009'
+      - '9443:8443'
+    environment: *postgres
 
-    command:
-      /wildfly/deploy.sh
+#  beacon-network-frontend:
+#    image: ghcr.io/elixir-europe/beacon-network-ui:latest
+#    command: node /opt/yarn-v1.22.19/bin/yarn.js start
+#    container_name: "beacon-network-frontend"
+#    environment:
+#      - CHOKIDAR_USEPOLLING=true
+#    ports:
+#      - '3000:3000'
+#    stdin_open: true
+#    volumes:
+#      - ./frontend:/usr/src/app
+#    networks:
+#      - beacon-network
