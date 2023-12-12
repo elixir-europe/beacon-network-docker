@@ -18,7 +18,7 @@ services:
     container_name: "postgres-beacon-network-2"
     restart: always
     environment: *postgres
-    volumes:.
+    volumes:
       - ./postgresql/data:/var/lib/postgresql/data
       - ./postgresql/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
     networks:
@@ -41,16 +41,12 @@ services:
       - '9443:8443'
     environment: *postgres
 
-#  beacon-network-frontend:
-#    image: ghcr.io/elixir-europe/beacon-network-ui:latest
-#    command: node /opt/yarn-v1.22.19/bin/yarn.js start
-#    container_name: "beacon-network-frontend"
-#    environment:
-#      - CHOKIDAR_USEPOLLING=true
-#    ports:
-#      - '3000:3000'
-#    stdin_open: true
-#    volumes:
-#      - ./frontend:/usr/src/app
-#    networks:
-#      - beacon-network
+  beacon-network-frontend:
+    image: ghcr.io/elixir-europe/beacon-network-ui:latest
+    command: node /opt/yarn-v1.22.19/bin/yarn.js start
+    container_name: bn-ui
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    ports:
+      - 3000:3000
+    stdin_open: true
