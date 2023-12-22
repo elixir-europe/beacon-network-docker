@@ -1,0 +1,5 @@
+{
+    "API_URL": "https://yourAPIdomain.com/beacon-network/v2.0.0",
+    "REDIRECT_URL": "https://yourUIdomain.com",
+    "KEYCLOAK_URL": "https://yourKEYCLOAKdomain.com"
+  }
