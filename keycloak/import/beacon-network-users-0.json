@@ -1,0 +1,26 @@
+{
+  "realm" : "beacon-network",
+  "users" : [ {
+    "id" : "a04ce3c7-6141-442e-a7e4-b8359e8ff436",
+    "username" : "test",
+    "firstName" : "User",
+    "lastName" : "Beacon Network",
+    "emailVerified" : true,
+    "createdTimestamp" : 1737720539933,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "d9a203d1-6e87-4af6-bf2f-71748fcbb827",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1737720560259,
+      "secretData" : "{\"value\":\"wfHLmXYsDUzU1dunIhGf71LuAX0uPDNsVIffDg/qAKc=\",\"salt\":\"iAj+XoTCq5g+fNFTzLW5Kw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-beacon-network" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

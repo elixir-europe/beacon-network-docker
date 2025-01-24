@@ -1,0 +1,5 @@
+{
+  "API_URL": "https://beacons.bsc.es/beacon-network/v2.0.0",
+  "REDIRECT_URL": "https://beacons.bsc.es",
+  "KEYCLOAK_URL": "https://beacons.bsc.es"
+}
