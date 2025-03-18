@@ -65,7 +65,7 @@ services:
     networks:
       - beacon-network
     ports:
-      - '8080:8080'
+      - '8090:8080'
   psqladmin:
     image: dpage/pgadmin4
     container_name: pgadmin
