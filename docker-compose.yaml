@@ -66,3 +66,11 @@ services:
       - beacon-network
     ports:
       - '8080:8080'
+  psqladmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    ports:
+      - '9090:80'
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=example@example.com
+      - PGADMIN_DEFAULT_PASSWORD=1234
