@@ -65,4 +65,4 @@ services:
     networks:
       - beacon-network
     ports:
-      - '8080:8080'
+      - '8091:8080'

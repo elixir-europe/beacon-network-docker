@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/beaconInfoResponse.json",
     "meta": {
         "apiVersion": "v2.0.0",
-        "beaconId": "es.elixir.bsc.beacon-network",
+        "beaconId": "es.ega-archive.impact-beacon-network",
         "isAggregated": true,
         "testMode": true,
         "returnedSchemas": [
@@ -22,26 +22,26 @@
         ]
     },
     "response": {
-        "alternativeUrl": "https://inb.bsc.es",
+        "alternativeUrl": "https://impact-beacon-network-demo.ega-archive.org",
         "apiVersion": "v2.0.0",
-        "beaconId": "es.elixir.bsc.beacon-network",
+        "beaconId": "es.ega-archive.impact-beacon-network",
         "createDateTime": "2022-04-12T00:00:00",
         "datasets": [],
-        "description": "Java Beacon Network 2.0 implementation",
+        "description": "Beacon Network para IMPaCT",
         "environment": "dev",
-        "id": "www.inb.bsc.es",
-        "name": "Java Beacon Network 2.0",
+        "id": "es.ega-archive.impact-beacon-network",
+        "name": "Beacon Network para IMPaCT",
         "organization": {
-            "address": "Barcelona Supercomputing Center Pla?a Eusebi G?ell, 1-3 08034 Barcelona (Spain)",
+            "address": "INB",
             "contactUrl": "",
             "description": "",
-            "id": "www.bsc.es",
+            "id": "www.inb-elixir.es",
             "info": {
                 "updateDateTime": "2023-08-17"
             },
             "logoUrl": "",
             "name": "",
-            "welcomeUrl": "http://www.bsc.es"
+            "welcomeUrl": "https://impact-beacon-network-demo.ega-archive.org"
         },
         "updateDateTime": "2022-04-12T00:00:00",
         "version": "v2",
