@@ -39,8 +39,8 @@
             "info": {
                 "updateDateTime": "2023-08-17"
             },
-            "logoUrl": "",
-            "name": "",
+            "logoUrl": "https://raw.githubusercontent.com/elixir-europe/beacon-network-ui/refs/heads/impact/frontend/public/impactLogo.png",
+            "name": "IMPaCT Beacon Network",
             "welcomeUrl": "https://impact-beacon-network-demo.ega-archive.org"
         },
         "updateDateTime": "2022-04-12T00:00:00",
