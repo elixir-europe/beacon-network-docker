@@ -23,7 +23,7 @@ services:
       - ./postgresql/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
     networks:
       - elixir-beacon-network
-  wildfly:
+  wildfly2:
     image: ghcr.io/elixir-europe/beacon-network-backend:latest
     container_name: "elixir-bn-server"
     depends_on:
@@ -34,19 +34,6 @@ services:
     hostname: wildfly
     networks:
       - elixir-beacon-network
-    expose:
-      - '8080'
-    environment: *env
-
-  elixir-nginx:
-    image: nginx
-    container_name: "elixir-bn-proxy"
-    depends_on:
-      - wildfly
-    restart: always
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-    networks:
-      - elixir-beacon-network
     ports:
       - '8092:8080'
+    environment: *env
