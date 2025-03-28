@@ -8,12 +8,12 @@ x-environment: &env
   - POSTGRES_PASSWORD=postgres
   - POSTGRES_BN_DATABASE=beacon-network
   - BEACON_NETWORK_CONFIG_DIR=/wildfly/BEACON-INF
-  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgres:5432/beacon-network
+  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgre:5432/beacon-network
   - BEACON_NETWORK_DB_USERNAME=beacon
   - BEACON_NETWORK_DB_PASSWORD=beacon
   - JBOSS_JAVA_SIZING=-XX:+UseContainerSupport -XX:MaxRAMPercentage=70.0 -Xms128m
 services:
-  postgres:
+  postgre:
     image: postgres:16.0-alpine
     container_name: "elixir-bn-db"
     restart: always
@@ -27,7 +27,7 @@ services:
     image: ghcr.io/elixir-europe/beacon-network-backend:latest
     container_name: "elixir-bn-server"
     depends_on:
-      - postgres
+      - postgre
     restart: always
     volumes:
       - ./wildfly/BEACON-INF:/wildfly/BEACON-INF
