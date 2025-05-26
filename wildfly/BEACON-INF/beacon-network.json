@@ -1,21 +1,13 @@
 [
-  "https://beacons.bsc.es/beacon/v2.0.0",
-  "https://ega-beacon-demo.ega-archive.org/api",
   "https://beacon-spain.ega-archive.org/api",
-  "https://gdi-demo.sd.csc.fi/beacon/api",
-  "https://progenetix.org/beacon/",
-  "https://staging-beacon.gdi.nbis.se/api",
-  "https://beacon.gdi.lhrs.feri.um.si/api",
-  "https://preview-emx2-pr-3411.dev.molgenis.org/api/beacon",
-  "https://gdi.cloud.ut.ee/beacon2/api",
-  "https://beacon.demo.umccr.org",
-  "https://beaconv2.cafevariome.org",
-  "https://playground.rd-connect.eu/beacon2/api",
-  "https://csvs.clinbioinfosspa.es/beacon/v2/api",
+  "https://beacon.biodata.pt/api/",
   "https://tryggve.tsd.usit.uio.no/beacon/api",
   "https://beacon.dev.gdi.lu/api",
+  "https://beacon.gdi.lhrs.feri.um.si/api",
   "https://portal-gdi-nl.molgeniscloud.org/PortalGDI/api/beacon",
-  "https://beacon.gdi.dkfz.de/api",
+  "https://gdi-demo.sd.csc.fi/beacon/api",
+  "https://gdi.cloud.ut.ee/beacon2/api",
+  "https://preview-emx2-pr-3411.dev.molgenis.org/api/beacon",
   "https://gdi-test.healthdata.nl/api",
-  "https://beacon.biodata.pt/api/"
+  "http://128.214.255.34:5050/api"
 ]
