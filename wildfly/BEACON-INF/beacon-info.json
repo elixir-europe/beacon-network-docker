@@ -22,7 +22,7 @@
         ]
     },
     "response": {
-        "alternativeUrl": "https://gdi-af-test-beacon-network-backend-demo.ega-archive.org",
+        "alternativeUrl": "https://af-gdi-test-beacon-network-backend-demo.ega-archive.org",
         "apiVersion": "v2.0.0",
         "beaconId": "eu.gdi-af-test.beacon-network",
         "createDateTime": "2022-04-12T00:00:00",
@@ -33,7 +33,7 @@
         "name": "GDI Allele Frequency Test Beacon Network",
         "organization": {
             "address": "GDI",
-            "contactUrl": "https://gdi-af-test-beacon-network-backend-demo.ega-archive.org",
+            "contactUrl": "https://af-gdi-test-beacon-network-backend-demo.ega-archive.org",
             "description": "",
             "id": "GDI",
             "info": {
@@ -41,10 +41,10 @@
             },
             "logoUrl": "https://gdi.onemilliongenomes.eu/images/gdi-logo.svg",
             "name": "GDI Allele Frequency Test",
-            "welcomeUrl": "https://gdi-af-test-beacon-network-backend-demo.ega-archive.org"
+            "welcomeUrl": "https://af-gdi-test-beacon-network-backend-demo.ega-archive.org"
         },
         "updateDateTime": "2022-04-12T00:00:00",
         "version": "v2",
-        "welcomeUrl": "https://gdi-af-test-beacon-network-backend-demo.ega-archive.org"
+        "welcomeUrl": "https://af-gdi-test-beacon-network-backend-demo.ega-archive.org"
     }
 }
