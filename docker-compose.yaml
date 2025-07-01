@@ -1,39 +1,39 @@
 version: '3.8'
 
 networks:
-  gdi-beacon-network-test:
+  gdi-beacon-network-af-test:
 
 x-environment: &env
   - POSTGRES_USER=postgres
   - POSTGRES_PASSWORD=postgres
   - POSTGRES_BN_DATABASE=beacon-network
   - BEACON_NETWORK_CONFIG_DIR=/wildfly/BEACON-INF
-  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgres-gdi-test:5432/beacon-network
+  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgres-gdi-af-test:5432/beacon-network
   - BEACON_NETWORK_DB_USERNAME=beacon
   - BEACON_NETWORK_DB_PASSWORD=beacon
   - JBOSS_JAVA_SIZING=-XX:+UseContainerSupport -XX:MaxRAMPercentage=70.0 -Xms128m
 services:
-  postgres-gdi-test:
+  postgres-gdi-af-test:
     image: postgres:16.0-alpine
-    container_name: "gdi-test-bn-db"
+    container_name: "gdi-af-test-bn-db"
     restart: always
     environment: *env
     volumes:
       - ./postgresql/data:/var/lib/postgresql/data
       - ./postgresql/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
     networks:
-      - gdi-beacon-network-test
-  wildfly-gdi-test:
+      - gdi-beacon-network-af-test
+  wildfly-gdi-af-test:
     image: ghcr.io/elixir-europe/beacon-network-backend:latest
-    container_name: "gdi-test-bn-server"
+    container_name: "gdi-af-test-bn-server"
     depends_on:
-      - postgres-gdi-test
+      - postgres-gdi-af-test
     restart: always
     volumes:
       - ./wildfly/BEACON-INF:/wildfly/BEACON-INF
     hostname: wildfly
     networks:
-      - gdi-beacon-network-test
+      - gdi-beacon-network-af-test
     ports:
-      - '8095:8080'
+      - '8096:8080'
     environment: *env
