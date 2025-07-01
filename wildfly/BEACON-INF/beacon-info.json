@@ -27,8 +27,8 @@
         "beaconId": "eu.gdi-test.beacon-network",
         "createDateTime": "2022-04-12T00:00:00",
         "datasets": [],
-        "description": "GDI Beacon Network",
-        "environment": "dev",
+        "description": "GDI Test Beacon Network",
+        "environment": "test",
         "id": "eu.gdi-test.beacon-network",
         "name": "GDI Test Beacon Network",
         "organization": {
