@@ -1,3 +1,10 @@
 [
-  "https://beacon.gdi.dkfz.de/api"
+"https://staging-beacon.gdi.nbis.se/api",
+"https://beacon-alleles.gdi.biodata.pt/api",
+"https://beacon-af-spain-demo.ega-archive.org/api",
+"https://beacon-af.gdi.dkfz.de/api",
+"https://beaconui.gdi.lhrs.feri.um.si/api",
+"https://gdi.ut.ee/beacon/aggregated/v2/",
+"http://195.148.22.194:5050/api",
+"https://tryggve.tsd.usit.uio.no/beacon/api"
 ]
