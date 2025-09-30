@@ -1,3 +1,9 @@
 [
-  "https://gdi-test.healthdata.nl/api"
+"https://beacon.testing.gdi.lu/api",
+"http://128.214.255.34:5050/api",
+"https://beacon-spain.ega-archive.org/api",
+"https://gdi.ut.ee/beacon/sensitive/v2/",
+"https://beacon.gdi.lhrs.feri.um.si/api",
+"https://beacon-prod.gdi.biodata.pt/api",
+"https://beacon-sl.gdi.dkfz.de/api"
 ]
