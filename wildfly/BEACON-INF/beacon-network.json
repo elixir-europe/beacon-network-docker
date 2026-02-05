@@ -1,13 +1,3 @@
 [
-  "https://beacon-spain.ega-archive.org/api",
-  "https://beacon.biodata.pt/api/",
-  "https://tryggve.tsd.usit.uio.no/beacon/api",
-  "https://beacon.dev.gdi.lu/api",
-  "https://beacon.gdi.lhrs.feri.um.si/api",
-  "https://portal-gdi-nl.molgeniscloud.org/PortalGDI/api/beacon",
-  "https://gdi-demo.sd.csc.fi/beacon/api",
-  "https://gdi.cloud.ut.ee/beacon2/api",
-  "https://preview-emx2-pr-3411.dev.molgenis.org/api/beacon",
-  "https://gdi-test.healthdata.nl/api",
-  "http://128.214.255.34:5050/api"
+"https://beacon-af-spain-demo.ega-archive.org/api"
 ]
