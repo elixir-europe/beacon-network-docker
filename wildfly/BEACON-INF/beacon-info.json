@@ -22,7 +22,7 @@
         ]
     },
     "response": {
-        "alternativeUrl": "https://af-browser-demo.ega-archive.org/",
+        "alternativeUrl": "https://catalogue-test.azurewebsites.net/",
         "apiVersion": "v2.0.0",
         "beaconId": "es.gdi.af.beacon-network",
         "createDateTime": "2022-04-12T00:00:00",
@@ -33,7 +33,7 @@
         "name": "GDI Allele Frequency Beacon Network",
         "organization": {
             "address": "Barcelona",
-            "contactUrl": "https://af-browser-demo.ega-archive.org/",
+            "contactUrl": "https://catalogue-test.azurewebsites.net/",
             "description": "",
             "id": "GDI",
             "info": {
@@ -41,10 +41,10 @@
             },
             "logoUrl": "https://gdi.onemilliongenomes.eu/images/gdi-logo.svg",
             "name": "GDI",
-            "welcomeUrl": "https://af-browser-demo.ega-archive.org/"
+            "welcomeUrl": "https://catalogue-test.azurewebsites.net/"
         },
         "updateDateTime": "2022-04-12T00:00:00",
         "version": "v2",
-        "welcomeUrl": "https://af-browser-demo.ega-archive.org/"
+        "welcomeUrl": "https://catalogue-test.azurewebsites.net/"
     }
 }

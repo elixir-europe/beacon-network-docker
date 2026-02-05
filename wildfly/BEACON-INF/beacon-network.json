@@ -1,8 +1,4 @@
 [
-  "https://beacon.gdi.dkfz.de/api",
-  "https://beacon-af-spain-demo.ega-archive.org/api",
-  "https://staging-beacon.gdi.nbis.se/api",
-  "https://beacon-alleles.gdi.biodata.pt/api",
-  "http://195.148.22.194:5050/api"
+  "https://beacon-af-spain-demo.ega-archive.org/api"
 ]
 
