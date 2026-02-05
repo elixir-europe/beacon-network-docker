@@ -23,7 +23,7 @@ services:
       - ./postgresql/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
     networks:
       - elixir-beacon-network
-  wildfly-gdi:
+  wildfly-gdi-prod:
     image: ghcr.io/elixir-europe/beacon-network-backend:latest
     container_name: "gdi-bn-server-prod"
     depends_on:
