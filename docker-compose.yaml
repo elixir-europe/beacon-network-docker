@@ -15,7 +15,7 @@ x-environment: &env
 services:
   postgres-gdi-af-demo:
     image: postgres:16.0-alpine
-    container_name: "gdi-bn-db"
+    container_name: "gdi-bn-af-db-demo"
     restart: always
     environment: *env
     volumes:
@@ -25,7 +25,7 @@ services:
       - elixir-beacon-network
   wildfly-gdi-af-demo:
     image: ghcr.io/elixir-europe/beacon-network-backend:latest
-    container_name: "gdi-bn-server"
+    container_name: "gdi-bn-af-server-demo"
     depends_on:
       - postgres-gdi-af-demo
     restart: always
