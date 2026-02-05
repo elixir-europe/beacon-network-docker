@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/beaconInfoResponse.json",
     "meta": {
         "apiVersion": "v2.0.0",
-        "beaconId": "es.gdi.af.beacon-network",
+        "beaconId": "es.gdi.af.beacon-network-prod",
         "isAggregated": true,
         "testMode": true,
         "returnedSchemas": [
@@ -24,13 +24,13 @@
     "response": {
         "alternativeUrl": "https://catalogue-test.azurewebsites.net/",
         "apiVersion": "v2.0.0",
-        "beaconId": "es.gdi.af.beacon-network",
+        "beaconId": "es.gdi.af.beacon-network-prod",
         "createDateTime": "2022-04-12T00:00:00",
         "datasets": [],
-        "description": "GDI Allele Frequency Beacon Network",
+        "description": "Official GDI Allele Frequency Beacon Network",
         "environment": "dev",
-        "id": "es.gdi.af.beacon-network",
-        "name": "GDI Allele Frequency Beacon Network",
+        "id": "es.gdi.af.beacon-network-prod",
+        "name": "Official GDI Allele Frequency Beacon Network",
         "organization": {
             "address": "Barcelona",
             "contactUrl": "https://catalogue-test.azurewebsites.net/",
