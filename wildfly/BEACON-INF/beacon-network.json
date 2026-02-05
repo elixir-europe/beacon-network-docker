@@ -1,9 +1,10 @@
 [
-"https://beacon.testing.gdi.lu/api",
+"https://beacon-sensitive-test.gdi.cloud.e-infra.cz/api",
+"https://gdi.ut.ee/beacon/sensitive/v2",
 "http://128.214.255.34:5050/api",
-"https://beacon-spain.ega-archive.org/api",
-"https://gdi.ut.ee/beacon/sensitive/v2/",
-"https://beacon.gdi.lhrs.feri.um.si/api",
+"https://beacon-sl.gdi.dkfz.de/api",
+"https://beacon.testing.gdi.lu/api",
 "https://beacon-prod.gdi.biodata.pt/api",
-"https://beacon-sl.gdi.dkfz.de/api"
+"https://beacon.gdi.lhrs.feri.um.si/api",
+"https://eu.beacon.gdi.lhrs.si/api"
 ]
