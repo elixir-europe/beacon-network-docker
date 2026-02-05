@@ -8,14 +8,14 @@ x-environment: &env
   - POSTGRES_PASSWORD=postgres
   - POSTGRES_BN_DATABASE=beacon-network
   - BEACON_NETWORK_CONFIG_DIR=/wildfly/BEACON-INF
-  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgres-gdi:5432/beacon-network
+  - BEACON_NETWORK_DB_CONNECTION_URL=jdbc:postgresql://postgres-gdi-prod:5432/beacon-network
   - BEACON_NETWORK_DB_USERNAME=beacon
   - BEACON_NETWORK_DB_PASSWORD=beacon
   - JBOSS_JAVA_SIZING=-XX:+UseContainerSupport -XX:MaxRAMPercentage=70.0 -Xms128m
 services:
-  postgres-gdi:
+  postgres-gdi-prod:
     image: postgres:16.0-alpine
-    container_name: "gdi-bn-db"
+    container_name: "gdi-bn-db-prod"
     restart: always
     environment: *env
     volumes:
@@ -25,9 +25,9 @@ services:
       - elixir-beacon-network
   wildfly-gdi:
     image: ghcr.io/elixir-europe/beacon-network-backend:latest
-    container_name: "gdi-bn-server"
+    container_name: "gdi-bn-server-prod"
     depends_on:
-      - postgres-gdi
+      - postgres-gdi-prod
     restart: always
     volumes:
       - ./wildfly/BEACON-INF:/wildfly/BEACON-INF
@@ -35,5 +35,5 @@ services:
     networks:
       - elixir-beacon-network
     ports:
-      - '8094:8080'
+      - '8097:8080'
     environment: *env
