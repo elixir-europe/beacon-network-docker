@@ -1,4 +1,6 @@
 [
-  "https://beacon-af-spain-demo.ega-archive.org/api"
+  "https://beacon-af-spain-demo.ega-archive.org/api",
+  "https://gdi-beacon-af-acc.healthdata.nl/api",
+  "https://eu-af.beacon.gdi.lhrs.si/api"
 ]
 
