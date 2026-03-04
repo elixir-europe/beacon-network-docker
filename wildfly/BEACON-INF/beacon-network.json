@@ -6,5 +6,6 @@
   "https://beacon-aggregated-staging.gdi.cloud.e-infra.cz/api",
   "https://fip-86-50-22-12.kaj.poutavm.fi/api",
   "https://gdi-test.biomed.lu.lv/staging/beacon/v2/aggregated/api",
-  "https://beacon-af.gdi.dkfz.de/api"
+  "https://beacon-af.gdi.dkfz.de/api",
+  "https://beacon-af-staging.mmcbg.org/api"
 ]
