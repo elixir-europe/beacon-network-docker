@@ -8,5 +8,6 @@
   "https://beacon-af.prod.ms.gdi.biodata.pt/api",
   "https://eu-af.beacon.gdi.lhrs.si/api",
   "https://beacon-af-spain-demo.ega-archive.org/api",
-  "https://gdi-test.biomed.lu.lv/staging/beacon/v2/aggregated/api"
+  "https://gdi-test.biomed.lu.lv/staging/beacon/v2/aggregated/api",
+  "https://gdi-vm-beacon-02.bionet.cnrbiomics.it/api"
 ]
