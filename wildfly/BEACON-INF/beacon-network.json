@@ -3,6 +3,7 @@
   "https://fip-86-50-22-12.kaj.poutavm.fi/api",
   "https://ega.elixir.no/beacon/api",
   "https://beacon-af-spain.ega-archive.org/api",
-  "https://gdi.biomed.lu.lv/beacon/v2/aggregated/api"
+  "https://gdi.biomed.lu.lv/beacon/v2/aggregated/api",
+  "https://gdi-beacon-af-test.healthdata.nl/api"
 ]
 
