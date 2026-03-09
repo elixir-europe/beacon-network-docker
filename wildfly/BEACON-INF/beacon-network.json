@@ -6,5 +6,6 @@
   "https://beaconv2.cafevariome.org",
   "https://playground.rd-connect.eu/beacon2/api",
   "https://csvs.clinbioinfosspa.es/beacon/v2/api",
-  "https://beacon.gdi.dkfz.de/api"
+  "https://beacon.gdi.dkfz.de/api",
+  "https://beacon-elixir-demo.ega-archive.org/api"
 ]
