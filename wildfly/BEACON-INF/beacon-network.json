@@ -1,9 +1,11 @@
 [
+  "https://beacon.gdi.datacore.vib.be/api",
   "https://beacon-aggregated-prod.gdi.cloud.e-infra.cz/api",
-  "https://fip-86-50-22-12.kaj.poutavm.fi/api",
+  "https://gdi-beacon-af.healthdata.nl/api",
+  "https://beacon-af.gdi.dkfz.de/api",
   "https://ega.elixir.no/beacon/api",
+  "https://beacon-af.prod.ms.gdi.biodata.pt/api",
   "https://beacon-af-spain.ega-archive.org/api",
-  "https://gdi.biomed.lu.lv/beacon/v2/aggregated/api",
-  "https://gdi-beacon-af-test.healthdata.nl/api"
+  "https://af-beacon.gdi.nbis.se/api"
 ]
 
