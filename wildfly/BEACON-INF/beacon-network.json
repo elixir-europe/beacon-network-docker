@@ -9,5 +9,12 @@
 "https://beaconui.gdi.lhrs.feri.um.si/api",
 "https://staging-beacon.gdi.nbis.se/api",
 "https://gdi-beacon-af-test.healthdata.nl/api",
-"https://eu-af.beacon.gdi.lhrs.si/api"
+"https://eu-af.beacon.gdi.lhrs.si/api",
+"https://beacon-demo.gdi.datacore.vib.be/api",
+"https://gdi.ut.ee/beacon/aggregated/v2",
+"https://gdi-vm-beacon-02.bionet.cnrbiomics.it/api",
+"https://beacon.testing.gdi.lu/api",
+"https://gdi-test.biomed.lu.lv/test/beacon/v2/aggregated/api",
+"https://beacon.ul.ie/af/api",
+"https://beacon.gdi-dev.santa.lt/beacon/aggregated/v2"
 ]
