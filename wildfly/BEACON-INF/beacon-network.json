@@ -10,6 +10,7 @@
   "https://eu-af.beacon.gdi.lhrs.si/api",
   "https://beacon-af-spain.ega-archive.org/api",
   "https://gdi.biomed.lu.lv/beacon/v2/aggregated/api",
-  "https://af-beacon.gdi.nbis.se/api"
+  "https://af-beacon.gdi.nbis.se/api",
+  "https://gdi.ut.ee/beacon/aggregated/v2"
 ]
 
