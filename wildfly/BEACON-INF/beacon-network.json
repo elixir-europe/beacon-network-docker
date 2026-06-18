@@ -2,7 +2,7 @@
   "https://beacon-staging.gdi.datacore.vib.be/api",
   "https://beacon-af-staging.mmcbg.org/api",
   "https://beacon-aggregated-staging.gdi.cloud.e-infra.cz/api",
-  "https://gdi.ut.ee/beacon/aggregated/v2",
+  "https://gdi-dev.ut.ee/beacon/aggregated/v2",
   "https://fip-86-50-22-12.kaj.poutavm.fi/api",
   "https://beacon-af.gdi.dkfz.de/api",
   "https://gdi-vm-beacon-02.bionet.cnrbiomics.it/api",
