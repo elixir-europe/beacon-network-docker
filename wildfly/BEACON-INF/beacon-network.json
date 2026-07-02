@@ -1,6 +1,5 @@
 [
 "https://beacon-aggregated-test.gdi.cloud.e-infra.cz/api",
-"https://gdi.ut.ee/beacon/aggregated/v2",
 "http://195.148.22.194:5050/api",
 "https://beacon-af.gdi.dkfz.de/api",
 "https://beacon-af.testing.gdi.lu/api",
@@ -16,5 +15,7 @@
 "https://beacon.testing.gdi.lu/api",
 "https://gdi-test.biomed.lu.lv/test/beacon/v2/aggregated/api",
 "https://beacon.ul.ie/af/api",
-"https://beacon.gdi-dev.santa.lt/beacon/aggregated/v2"
+"https://beacon.gdi-dev.santa.lt/beacon/aggregated/v2",
+"https://beacon-images-test.ega-archive.org/api",
+"https://gdi-dev.ut.ee/beacon/aggregated/v2"
 ]
