@@ -12,6 +12,11 @@ x-environment: &env
   - BEACON_NETWORK_DB_USERNAME=beacon
   - BEACON_NETWORK_DB_PASSWORD=beacon
   - JBOSS_JAVA_SIZING=-XX:+UseContainerSupport -XX:MaxRAMPercentage=70.0 -Xms128m
+  - BEACON_NETWORK_OIDC_ENDPOINT=https://login.aai.lifescience-ri.eu/oidc/
+  - BEACON_NETWORK_CLIENT_ID=
+  - BEACON_NETWORK_CLIENT_SECRET=
+  - BEACON_NETWORK_TOKEN_AUDIENCE='["client1", "https://beacon-network-backend-test.ega-archive.org"]'
+  - BEACON_NETWORK_TOKEN_ISSUER=https://login.aai.lifescience-ri.eu/oidc
 services:
   postgres-gdi-af-demo:
     image: postgres:16.0-alpine
@@ -24,7 +29,7 @@ services:
     networks:
       - elixir-beacon-network
   wildfly-gdi-af-demo:
-    image: ghcr.io/elixir-europe/beacon-network-backend:latest
+    image: ghcr.io/elixir-europe/beacon-network-backend-snapshot:v0.0.15-snapshot
     container_name: "gdi-bn-af-server-demo"
     depends_on:
       - postgres-gdi-af-demo
@@ -35,5 +40,5 @@ services:
     networks:
       - elixir-beacon-network
     ports:
-      - '8080:8080'
+      - '8085:8080'
     environment: *env

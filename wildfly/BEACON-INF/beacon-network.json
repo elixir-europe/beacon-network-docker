@@ -1,15 +1,3 @@
 [
-  "https://beacon-staging.gdi.datacore.vib.be/api",
-  "https://beacon-af-staging.mmcbg.org/api",
-  "https://beacon-aggregated-staging.gdi.cloud.e-infra.cz/api",
-  "https://gdi-dev.ut.ee/beacon/aggregated/v2",
-  "https://fip-86-50-22-12.kaj.poutavm.fi/api",
-  "https://beacon-af.gdi.dkfz.de/api",
-  "https://gdi-vm-beacon-02.bionet.cnrbiomics.it/api",
-  "https://beacon.staging.gdi.lu/api",
-  "https://gdi-beacon-af-acc.healthdata.nl/api",
-  "https://beacon-af.prod.ms.gdi.biodata.pt/api",
-  "https://eu-af.beacon.gdi.lhrs.si/api",
-  "https://beacon-af-spain-demo.ega-archive.org/api",
-  "https://gdi-test.biomed.lu.lv/staging/beacon/v2/aggregated/api"
+  "https://beacon-images-test.ega-archive.org/api"
 ]
