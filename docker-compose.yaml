@@ -49,6 +49,7 @@ services:
       - '3000'
     volumes:
       - ./frontend/config.json:/client/src/config/config.json
+      - ./frontend/.env:/client/.env
 
   nginx:
     image: nginx
