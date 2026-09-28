@@ -1,6 +1,6 @@
 {
   "beaconType": "singleBeacon",
-  "apiUrl": "http://localhost:8080/beacon-network/v2.0.0",
+  "apiUrl": "http://host.docker.internal:8080/beacon-network/v2.0.0",
   "assemblyId": ["GRCh38", "GRCh37", "NCBI36"],
   "variationType": [
     { "jsonName": "SNP", "displayName": "SNP" },
