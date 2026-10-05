@@ -1,4 +1,6 @@
 [
+"https://gdi-croatia-node.org/api",
+"https://gdi-dev.ut.ee/beacon/sensitive/v2",
 "https://beacon-spain-demo.ega-archive.org/api",
 "https://eu.beacon.gdi.lhrs.si/api"
 ]
